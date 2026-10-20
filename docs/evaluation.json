@@ -1,0 +1,401 @@
+{
+  "Instacart \u00b7 local cohort": {
+    "kpis": {
+      "orders": 20256,
+      "customers": 2948,
+      "items": 202199,
+      "repeat_rate": 0.5886774909866023,
+      "basket_size": 9.98217812006319
+    },
+    "sizes": {
+      "history_items": 145303,
+      "train_items": 21010,
+      "test_items": 21729,
+      "excluded_users": 890
+    },
+    "scores": [
+      {
+        "model": "Prevalence baseline",
+        "ROC_AUC": 0.5,
+        "Average_precision": 0.6390537990703667,
+        "Brier_score": 0.23146745804843272
+      },
+      {
+        "model": "Logistic regression",
+        "ROC_AUC": 0.7376941569471848,
+        "Average_precision": 0.8259675079441565,
+        "Brier_score": 0.19657676889853434
+      },
+      {
+        "model": "Random forest",
+        "ROC_AUC": 0.7483984953965415,
+        "Average_precision": 0.8360004715341915,
+        "Brier_score": 0.1945952992461962
+      }
+    ],
+    "reports": {
+      "Prevalence baseline": {
+        "0": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 7843.0
+        },
+        "1": {
+          "precision": 0.6390537990703667,
+          "recall": 1.0,
+          "f1-score": 0.7797837989611119,
+          "support": 13886.0
+        },
+        "accuracy": 0.6390537990703667,
+        "macro avg": {
+          "precision": 0.3195268995351834,
+          "recall": 0.5,
+          "f1-score": 0.38989189948055597,
+          "support": 21729.0
+        },
+        "weighted avg": {
+          "precision": 0.40838975810626876,
+          "recall": 0.6390537990703667,
+          "f1-score": 0.49832379917962166,
+          "support": 21729.0
+        }
+      },
+      "Logistic regression": {
+        "0": {
+          "precision": 0.5890192669853687,
+          "recall": 0.5184240724212674,
+          "f1-score": 0.5514715855147159,
+          "support": 7843.0
+        },
+        "1": {
+          "precision": 0.74524484014569,
+          "recall": 0.7956935042488837,
+          "f1-score": 0.7696433546949011,
+          "support": 13886.0
+        },
+        "accuracy": 0.6956141561967877,
+        "macro avg": {
+          "precision": 0.6671320535655294,
+          "recall": 0.6570587883350756,
+          "f1-score": 0.6605574701048085,
+          "support": 21729.0
+        },
+        "weighted avg": {
+          "precision": 0.6888558130254175,
+          "recall": 0.6956141561967877,
+          "f1-score": 0.6908950834592165,
+          "support": 21729.0
+        }
+      },
+      "Random forest": {
+        "0": {
+          "precision": 0.6495967741935483,
+          "recall": 0.41081218921331125,
+          "f1-score": 0.5033195344841053,
+          "support": 7843.0
+        },
+        "1": {
+          "precision": 0.7244319875961596,
+          "recall": 0.8748379662969897,
+          "f1-score": 0.7925623878649486,
+          "support": 13886.0
+        },
+        "accuracy": 0.7073496249252151,
+        "macro avg": {
+          "precision": 0.6870143808948539,
+          "recall": 0.6428250777551505,
+          "f1-score": 0.6479409611745269,
+          "support": 21729.0
+        },
+        "weighted avg": {
+          "precision": 0.6974205016227286,
+          "recall": 0.7073496249252151,
+          "f1-score": 0.6881612787910864,
+          "support": 21729.0
+        }
+      }
+    },
+    "test_prevalence": 0.6390537990703667,
+    "top_products": [
+      {
+        "product_name": "Banana",
+        "items": 3038,
+        "repeat_rate": 0.8499012508229098,
+        "first_count": 692,
+        "first_ratio": 0.22778143515470706
+      },
+      {
+        "product_name": "Bag of Organic Bananas",
+        "items": 2298,
+        "repeat_rate": 0.8207136640557006,
+        "first_count": 468,
+        "first_ratio": 0.20365535248041775
+      },
+      {
+        "product_name": "Organic Strawberries",
+        "items": 1680,
+        "repeat_rate": 0.7672619047619048,
+        "first_count": 197,
+        "first_ratio": 0.11726190476190476
+      },
+      {
+        "product_name": "Organic Baby Spinach",
+        "items": 1586,
+        "repeat_rate": 0.7786885245901639,
+        "first_count": 149,
+        "first_ratio": 0.09394703656998739
+      },
+      {
+        "product_name": "Organic Hass Avocado",
+        "items": 1421,
+        "repeat_rate": 0.8064743138634765,
+        "first_count": 145,
+        "first_ratio": 0.10204081632653061
+      }
+    ],
+    "top_pairs": [
+      {
+        "product_a": "Bag of Organic Bananas",
+        "product_b": "Organic Hass Avocado",
+        "count": 405,
+        "support": 0.019994075829383885,
+        "confidence_a_to_b": 0.1762402088772846,
+        "lift": 2.512260148499843
+      },
+      {
+        "product_a": "Bag of Organic Bananas",
+        "product_b": "Organic Strawberries",
+        "count": 368,
+        "support": 0.018167456556082148,
+        "confidence_a_to_b": 0.16013925152306355,
+        "lift": 1.9308218326495088
+      },
+      {
+        "product_a": "Organic Strawberries",
+        "product_b": "Banana",
+        "count": 348,
+        "support": 0.017180094786729858,
+        "confidence_a_to_b": 0.20714285714285716,
+        "lift": 1.3811342048340074
+      },
+      {
+        "product_a": "Banana",
+        "product_b": "Organic Avocado",
+        "count": 335,
+        "support": 0.01653830963665087,
+        "confidence_a_to_b": 0.11026991441737985,
+        "lift": 1.925540850377971
+      },
+      {
+        "product_a": "Bag of Organic Bananas",
+        "product_b": "Organic Baby Spinach",
+        "count": 324,
+        "support": 0.015995260663507108,
+        "confidence_a_to_b": 0.1409921671018277,
+        "lift": 1.8007171102235948
+      }
+    ],
+    "elapsed_seconds": 1.68
+  },
+  "Synthetic demo \u00b7 generated data": {
+    "kpis": {
+      "orders": 6244,
+      "customers": 650,
+      "items": 44312,
+      "repeat_rate": 0.7364145152554613,
+      "basket_size": 7.096732863549007
+    },
+    "sizes": {
+      "history_items": 35154,
+      "train_items": 4649,
+      "test_items": 4509,
+      "excluded_users": 0
+    },
+    "scores": [
+      {
+        "model": "Prevalence baseline",
+        "ROC_AUC": 0.5,
+        "Average_precision": 0.9237081392770016,
+        "Brier_score": 0.07101427704512817
+      },
+      {
+        "model": "Logistic regression",
+        "ROC_AUC": 0.7065447109076188,
+        "Average_precision": 0.961154033716805,
+        "Brier_score": 0.06817277108442342
+      },
+      {
+        "model": "Random forest",
+        "ROC_AUC": 0.691688070577068,
+        "Average_precision": 0.9587698534399741,
+        "Brier_score": 0.06863199513830931
+      }
+    ],
+    "reports": {
+      "Prevalence baseline": {
+        "0": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 344.0
+        },
+        "1": {
+          "precision": 0.9237081392770016,
+          "recall": 1.0,
+          "f1-score": 0.9603412497117824,
+          "support": 4165.0
+        },
+        "accuracy": 0.9237081392770016,
+        "macro avg": {
+          "precision": 0.4618540696385008,
+          "recall": 0.5,
+          "f1-score": 0.4801706248558912,
+          "support": 4509.0
+        },
+        "weighted avg": {
+          "precision": 0.8532367265665806,
+          "recall": 0.9237081392770016,
+          "f1-score": 0.8870750288422209,
+          "support": 4509.0
+        }
+      },
+      "Logistic regression": {
+        "0": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 344.0
+        },
+        "1": {
+          "precision": 0.9237081392770016,
+          "recall": 1.0,
+          "f1-score": 0.9603412497117824,
+          "support": 4165.0
+        },
+        "accuracy": 0.9237081392770016,
+        "macro avg": {
+          "precision": 0.4618540696385008,
+          "recall": 0.5,
+          "f1-score": 0.4801706248558912,
+          "support": 4509.0
+        },
+        "weighted avg": {
+          "precision": 0.8532367265665806,
+          "recall": 0.9237081392770016,
+          "f1-score": 0.8870750288422209,
+          "support": 4509.0
+        }
+      },
+      "Random forest": {
+        "0": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 344.0
+        },
+        "1": {
+          "precision": 0.9237081392770016,
+          "recall": 1.0,
+          "f1-score": 0.9603412497117824,
+          "support": 4165.0
+        },
+        "accuracy": 0.9237081392770016,
+        "macro avg": {
+          "precision": 0.4618540696385008,
+          "recall": 0.5,
+          "f1-score": 0.4801706248558912,
+          "support": 4509.0
+        },
+        "weighted avg": {
+          "precision": 0.8532367265665806,
+          "recall": 0.9237081392770016,
+          "f1-score": 0.8870750288422209,
+          "support": 4509.0
+        }
+      }
+    },
+    "test_prevalence": 0.9237081392770016,
+    "top_products": [
+      {
+        "product_name": "Milk",
+        "items": 2568,
+        "repeat_rate": 0.7694704049844237,
+        "first_count": 257,
+        "first_ratio": 0.10007788161993769
+      },
+      {
+        "product_name": "Peanut butter",
+        "items": 1901,
+        "repeat_rate": 0.7459231983166754,
+        "first_count": 280,
+        "first_ratio": 0.14729089952656496
+      },
+      {
+        "product_name": "Yogurt",
+        "items": 1888,
+        "repeat_rate": 0.7341101694915254,
+        "first_count": 274,
+        "first_ratio": 0.1451271186440678
+      },
+      {
+        "product_name": "Oats",
+        "items": 1880,
+        "repeat_rate": 0.7436170212765958,
+        "first_count": 259,
+        "first_ratio": 0.1377659574468085
+      },
+      {
+        "product_name": "Rice",
+        "items": 1865,
+        "repeat_rate": 0.739946380697051,
+        "first_count": 244,
+        "first_ratio": 0.13083109919571045
+      }
+    ],
+    "top_pairs": [
+      {
+        "product_a": "Bananas",
+        "product_b": "Milk",
+        "count": 1310,
+        "support": 0.20980140935297886,
+        "confidence_a_to_b": 0.7225592939878654,
+        "lift": 1.756877037250869
+      },
+      {
+        "product_a": "Milk",
+        "product_b": "Bread",
+        "count": 811,
+        "support": 0.12988468930172967,
+        "confidence_a_to_b": 0.315809968847352,
+        "lift": 1.0590319256084135
+      },
+      {
+        "product_a": "Milk",
+        "product_b": "Peanut butter",
+        "count": 807,
+        "support": 0.12924407431133889,
+        "confidence_a_to_b": 0.3142523364485981,
+        "lift": 1.0321891576986042
+      },
+      {
+        "product_a": "Spinach",
+        "product_b": "Milk",
+        "count": 799,
+        "support": 0.12796284433055732,
+        "confidence_a_to_b": 0.44537346711259757,
+        "lift": 1.0829096295370169
+      },
+      {
+        "product_a": "Milk",
+        "product_b": "Oat milk",
+        "count": 798,
+        "support": 0.12780269058295965,
+        "confidence_a_to_b": 0.3107476635514019,
+        "lift": 1.0471173293119014
+      }
+    ],
+    "elapsed_seconds": 0.46
+  },
+  "peak_process_rss_mib": 270.9
+}

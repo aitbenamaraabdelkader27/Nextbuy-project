@@ -1,0 +1,125 @@
+{
+  "orders": {
+    "rows": 1444444,
+    "columns": [
+      "order_id",
+      "user_id",
+      "order_number",
+      "order_dow",
+      "order_hour_of_day",
+      "days_since_prior_order"
+    ],
+    "missing": {
+      "order_id": 0,
+      "user_id": 31,
+      "order_number": 23,
+      "order_dow": 22,
+      "order_hour_of_day": 23,
+      "days_since_prior_order": 86909
+    },
+    "duplicates": 0,
+    "duplicate_keys": 0,
+    "dtypes": {
+      "order_id": "int32",
+      "user_id": "float64",
+      "order_number": "float64",
+      "order_dow": "float64",
+      "order_hour_of_day": "float64",
+      "days_since_prior_order": "float64"
+    }
+  },
+  "products": {
+    "rows": 49688,
+    "columns": [
+      "product_id",
+      "product_name",
+      "aisle_id",
+      "department_id"
+    ],
+    "missing": {
+      "product_id": 0,
+      "product_name": 0,
+      "aisle_id": 0,
+      "department_id": 0
+    },
+    "duplicates": 0,
+    "duplicate_keys": 0,
+    "dtypes": {
+      "product_id": "int32",
+      "product_name": "str",
+      "aisle_id": "int32",
+      "department_id": "int32"
+    }
+  },
+  "aisles": {
+    "rows": 134,
+    "columns": [
+      "aisle_id",
+      "aisle"
+    ],
+    "missing": {
+      "aisle_id": 0,
+      "aisle": 0
+    },
+    "duplicates": 0,
+    "duplicate_keys": 0,
+    "dtypes": {
+      "aisle_id": "int32",
+      "aisle": "str"
+    }
+  },
+  "departments": {
+    "rows": 21,
+    "columns": [
+      "department_id",
+      "department"
+    ],
+    "missing": {
+      "department_id": 0,
+      "department": 0
+    },
+    "duplicates": 0,
+    "duplicate_keys": 0,
+    "dtypes": {
+      "department_id": "int32",
+      "department": "str"
+    }
+  },
+  "order_products": {
+    "rows": 13692886,
+    "columns": [
+      "order_id",
+      "product_id",
+      "add_to_cart_order",
+      "reordered"
+    ],
+    "missing": {
+      "order_id": 0,
+      "product_id": 449,
+      "add_to_cart_order": 446,
+      "reordered": 449
+    },
+    "duplicates": 0,
+    "duplicate_keys": 0,
+    "dtypes": {
+      "order_id": "int32",
+      "product_id": "float64",
+      "add_to_cart_order": "float64",
+      "reordered": "float64"
+    }
+  },
+  "checks": {
+    "orphan_order_lines": 0,
+    "orphan_product_lines": 449,
+    "invalid_target": 449,
+    "invalid_hour": 23,
+    "invalid_dow": 22,
+    "missing_days_after_first": 33,
+    "orders_without_lines": 86903,
+    "cart_positions_missing": 446,
+    "cart_positions_max": 127,
+    "invalid_days": 0,
+    "repeat_rate": 0.5895904432498028,
+    "unique_users": 201117
+  }
+}

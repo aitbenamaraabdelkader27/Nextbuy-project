@@ -1,0 +1,29 @@
+{
+  "pages": [
+    {
+      "page": "Data explorer",
+      "charts": 2
+    },
+    {
+      "page": "Basket insights",
+      "charts": 3
+    },
+    {
+      "page": "Model lab",
+      "charts": 2
+    },
+    {
+      "page": "Methodology & quality",
+      "charts": 0
+    },
+    {
+      "viewport": "tablet",
+      "horizontal_overflow": false
+    },
+    {
+      "viewport": "mobile",
+      "horizontal_overflow": false
+    }
+  ],
+  "page_errors": []
+}
